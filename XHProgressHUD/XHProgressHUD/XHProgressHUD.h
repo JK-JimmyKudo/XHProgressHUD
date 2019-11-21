@@ -350,6 +350,8 @@ typedef NS_ENUM(NSInteger,HUDStateType) {   //显示状态类型
 
 /// 获取当前屏幕显示的viewcontroller
 + (UIViewController *)p_getCurrentUIVC;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
