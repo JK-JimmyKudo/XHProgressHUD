@@ -26,6 +26,7 @@
     tableView.dataSource = self;
     [self.view addSubview:tableView];
     
+    
 }
 
 
@@ -53,12 +54,22 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.row == 0) {
-     
-        [XHProgressHUD showLoading];
-        
-    }else if (indexPath.row == 1){
-        
+    
+    switch (indexPath.row) {
+        case 0:
+            [XHProgressHUD showLoading];
+            break;
+        case 1:
+            [XHProgressHUD showLoadingHud:@"正在加载..."];
+            break;
+            
+            
+       case 2:
+            [XHProgressHUD hidenHud];
+            break;
+            
+        default:
+            break;
     }
 }
 
@@ -67,8 +78,8 @@
 -(NSMutableArray *)dataArr{
     if (!_dataArr) {
         _dataArr = [NSMutableArray arrayWithArray:@[
-            @"弹出 菊花 HUD （文字）文字默认为loading...",
-            @""
+            @"文字默认为loading...",
+            @"增加文字",
         
         
         
@@ -88,7 +99,7 @@
         
         
         
-        
+        @"隐藏"
         ]];
     }
     return _dataArr;
