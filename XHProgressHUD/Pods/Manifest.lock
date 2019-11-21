@@ -1,0 +1,16 @@
+PODS:
+  - MBProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - MBProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+
+PODFILE CHECKSUM: d00cfa940777510412a08364ecad3d4aa6bec21b
+
+COCOAPODS: 1.8.0.beta.2
